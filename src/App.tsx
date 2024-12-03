@@ -1,20 +1,21 @@
-import { useState } from "react";
+import ImageCarousel from "./components/ImageCarousel";
+
+const images = [
+  "https://i.etsystatic.com/iap/b7581a/6243814028/iap_300x300.6243814028_tsj66tfy.jpg?version=0",
+  "https://i.etsystatic.com/iap/b7581a/6243814028/iap_300x300.6243814028_tsj66tfy.jpg?version=0",
+  "https://i.etsystatic.com/iap/b7581a/6243814028/iap_300x300.6243814028_tsj66tfy.jpg?version=0",
+];
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <main className="flex flex-col items-center gap-8 py-16 max-w-[1280px] mx-auto">
-      <h1 className="text-4xl font-bold">Hello React & Tailwind!</h1>
-      <div className="flex flex-row items-center gap-6">
-        <button
-          className="bg-sky-300 px-3 py-2 rounded hover:bg-sky-400"
-          onClick={() => setCount(count + 1)}
-        >
-          Count: {count}
-        </button>
+    <div className="h-screen w-screen bg-black">
+      <div className="p-4 ">
+        <h1 className="text-2xl font-bold mb-4 text-center text-[#FFD700]">
+          Onyxx by Design
+        </h1>
+        <ImageCarousel images={images} />
       </div>
-    </main>
+    </div>
   );
 }
 
