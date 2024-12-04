@@ -1,4 +1,6 @@
-import { faInstagram, faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -7,7 +9,8 @@ function Header(){
         <div className="flex justify-left items-center p-5">
             <h1 className="text-white text-4xl">Onyxx by Design</h1>
         </div>
-        <div className="flex col-start-3">
+        <div className="flex col-start-3 text-white items-center justify-end p-10">
+        <FontAwesomeIcon icon={faInstagram} size="lg" className="md:text-2xl mr-10" />
         <FontAwesomeIcon icon={faHome} size="lg" className="md:text-2xl" />
         </div>
     </div>)

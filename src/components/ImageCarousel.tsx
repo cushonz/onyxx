@@ -16,7 +16,7 @@ const ImageCarousel = ({ images }) => {
   };
 
   return (
-    <div className="relative w-full max-w-3xl mx-auto overflow-hidden">
+    <div className="relative w-full max-w-3xl mx-auto overflow-hidden rounded-3xl">
       <div
         className="flex transition-transform duration-500 ease-in-out"
         style={{
@@ -26,7 +26,7 @@ const ImageCarousel = ({ images }) => {
         {images.map((image, index) => (
           <div
             key={index}
-            className="flex items-center justify-center w-full h-64 bg-gray-100 flex-shrink-0"
+            className="flex items-center justify-center w-full h-64 bg-gray-900 flex-shrink-0"
           >
             <img
               src={image}
@@ -40,13 +40,13 @@ const ImageCarousel = ({ images }) => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-2 top-1/2 -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full shadow-md hover:bg-gray-600 transition"
+        className="absolute left-2 top-1/2 -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full shadow-md hover:bg-gray-900 transition"
       >
         ❮
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full shadow-md hover:bg-gray-600 transition"
+        className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full shadow-md hover:bg-gray-900 transition"
       >
         ❯
       </button>
