@@ -1,7 +1,7 @@
 import ImageCarousel from "./components/ImageCarousel";
 import Header from "./components/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Products from "./components/pages/Products"
+import Products from "./components/pages/Products";
 import Reviews from "./components/pages/Reviews";
 
 const images = [
@@ -12,14 +12,16 @@ const images = [
 function App() {
   return (
     <div className="min-h-screen w-screen bg-gray-800">
-    <Header />
-    <BrowserRouter>
-      <Routes>
-      <Route path="/product" element={<Products/>}/>
-      <Route path="/reviews" element={<Reviews/>}/>
-      </Routes>
-    </BrowserRouter>
-  </div>
+      <Header />
+      <div className="flex-1">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/product" element={<Products />} />
+            <Route path="/reviews" element={<Reviews />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </div>
   );
 }
 

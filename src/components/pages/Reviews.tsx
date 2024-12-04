@@ -1,16 +1,11 @@
+import ReviewForm from "../ReviewForm";
 
-function Reviews(){
-    return(
-    <div>
-        <div className="flex justify-center">
-            <h1 className="text-white text-5xl"> Reviews </h1>
-            <div>
-
-            </div>
-        </div>
+function Reviews() {
+  return (
+    <div className="bg-black flex flex-col justify-center items-center h-full w-full">
+      <ReviewForm />
     </div>
-    );
+  );
 }
-
 
 export default Reviews;
